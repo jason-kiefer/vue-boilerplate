@@ -1,7 +1,7 @@
-"# React-Web-App-Boilerplate" 
+Instructions: <br /> <br />
 
 npm install <br />
 npm run dev <br />
 
-Then open index.html
-"# vue-boilerplate" 
+Then open index.html <br /> <br />
+
