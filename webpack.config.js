@@ -1,8 +1,35 @@
 // webpack.config.js
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     node: { fs: 'empty' },
+    entry: {
+        "bundle": "./src/index.js",
+        //"bundle.min": "./src/index.js" 
+    },
+    output: {
+        path: '/Users/Jason/projects/Vue Boilerplate/dist/',
+        filename: "webpack.bundle.js",
+        publicPath: '/dist/'
+    },
+    optimization: {
+        minimize: true,
+        minimizer: [new UglifyJsPlugin({
+            test: /\.js$/
+        })],
+    },
+    devServer: {
+        contentBase: "./dist",
+        compress: true,
+        hot: true,
+        inline: true,
+        host: '0.0.0.0',
+        port: 8081,
+        headers: {
+            'X-Frame-Options': 'sameorigin'
+        },
+    },
 	module : {
 		rules: [
 			{
@@ -23,7 +50,6 @@ module.exports = {
 		],
     },
     plugins: [
-        // make sure to include the plugin!
         new VueLoaderPlugin()
     ]
 }

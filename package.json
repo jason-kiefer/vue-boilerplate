@@ -1,11 +1,13 @@
 {
-  "name": "ReactApp",
+  "name": "Vue-Boilerplate",
   "version": "1.0.0",
-  "description": "Interface for remote hardware devices",
+  "description": "Minimalist Vue Boilerplate",
   "main": "main.js",
   "scripts": {
-    "dev": "webpack --mode development --watch ./src/index.js --output ./dist/vue.compiled.js",
+    "dev": "webpack --mode development --watch ./src/index.js --output ./dist/vue.dev.compiled.js",
     "build": "webpack --mode production ./src/index.js --output ./dist/vue.compiled.js",
+    "build::min": "webpack --mode production ./src/index.js --output ./dist/vue.compiled.min.js",
+    "start": "webpack-dev-server --host 0.0.0.0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -31,10 +33,13 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
     "css-loader": "^3.4.2",
+    "minimist": "^1.2.5",
     "style-loader": "^1.1.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "vue-loader": "^15.9.1",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
   }
 }

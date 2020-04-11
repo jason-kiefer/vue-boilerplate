@@ -6,10 +6,10 @@ import App from './components/App.vue'
 
 // Fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes, faUser, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faBars, faTimes)
+library.add(faBars, faTimes, faUser, faSignOutAlt)
 
 Vue.use(Vuex)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
