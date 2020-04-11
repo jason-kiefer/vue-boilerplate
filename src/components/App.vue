@@ -18,6 +18,9 @@
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+// Vuetify
+import 'vuetify/dist/vuetify.min.css'
+
 // Local Style
 import '../css/Backgrounds.css'
 import '../css/BorderColors.css'
