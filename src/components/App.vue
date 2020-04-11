@@ -1,9 +1,17 @@
-
 <!-- 
     - Entry point to Vue application
     - Components use bootstrap for style, with some local css files for customizing
     - Examples includes Navbar, SideDrawer and Footer 
 -->
+<style lang='scss'>
+    @import '../assets/scss/backgrounds.scss';
+    @import '../assets/scss/borders.scss';
+    @import '../assets/scss/buttons.scss';
+    @import '../assets/scss/colors.scss';
+    @import '../assets/scss/fontcolors.scss';
+    @import '../assets/scss/main.scss';
+</style>
+
 <template>
     <div>
         <Navbar />
@@ -20,14 +28,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Vuetify
 import 'vuetify/dist/vuetify.min.css'
-
-// Local Style
-import '../css/Backgrounds.css'
-import '../css/BorderColors.css'
-import '../css/Buttons.css';
-import '../css/FontColors.css'
-import '../css/Main.css'
-import '../css/Positioning.css'
 
 // Components
 import Navbar from "./Navbar/index.vue";

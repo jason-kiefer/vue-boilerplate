@@ -5,7 +5,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
     node: { fs: 'empty' },
     entry: {
-        "bundle": "./src/index.js",
+        "bundle": "./src/main.js",
         //"bundle.min": "./src/index.js" 
     },
     output: {
@@ -40,8 +40,8 @@ module.exports = {
 				}
 			},
 			{
-		        test: /\.css$/i,
-		        use: ['style-loader', 'css-loader'],
+		        test: /\.(sa|sc|c)ss$/,
+		        use: ['style-loader', 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.vue$/,
