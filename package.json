@@ -4,8 +4,8 @@
   "description": "Interface for remote hardware devices",
   "main": "main.js",
   "scripts": {
-    "dev": "webpack --mode development --watch ./src/index.js --output ReactApp.js",
-    "build": "webpack --mode production ./src/index.js --output ReactApp.js",
+    "dev": "webpack --mode development --watch ./src/index.js --output ./dist/vue.compiled.js",
+    "build": "webpack --mode production ./src/index.js --output ./dist/vue.compiled.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
