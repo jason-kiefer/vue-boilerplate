@@ -1,0 +1,19 @@
+@import "../../assets/scss/index.scss";
+
+.node {
+    color:$ll-gray;
+    padding:8px;
+    margin-top:20px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    @include lg {
+        max-width:200px;
+        border-radius: 7px;
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+    }
+    & header {
+        display: flex;
+        justify-content: space-between;
+    }
+}

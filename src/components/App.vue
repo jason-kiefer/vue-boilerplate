@@ -4,17 +4,14 @@
     - Examples includes Navbar, SideDrawer and Footer 
 -->
 <style lang='scss'>
-    @import '../assets/scss/backgrounds.scss';
-    @import '../assets/scss/borders.scss';
-    @import '../assets/scss/buttons.scss';
-    @import '../assets/scss/colors.scss';
-    @import '../assets/scss/fontcolors.scss';
-    @import '../assets/scss/main.scss';
+    @import '../assets/scss/index.scss';
+    //@import 'vuetify/dist/vuetify.min.css';
 </style>
 
 <template>
     <div>
         <Navbar />
+        <Node />
         <SideDrawer />
         <Footer />
     </div>
@@ -22,21 +19,16 @@
 
 <script>
 
-// Bootstrap
-import 'bootstrap/dist/css/bootstrap-grid.min.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
-
-// Vuetify
-import 'vuetify/dist/vuetify.min.css'
-
 // Components
 import Navbar from "./Navbar/index.vue";
+import Node from "./Node/index.vue";
 import SideDrawer from "./SideDrawer/index.vue";
 import Footer from "./Footer/index.vue";
 
 export default {
     components: { 
         Navbar,
+        Node,
         SideDrawer,
         Footer
     }
